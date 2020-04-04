@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='icon.ico') }}">
+    <title>Plot Drawing</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+</head>
+
+<body>
+    <h1 class="title">Plot Drawing</h1>
+    <form action="/calculate" method="get">
+        <table>
+        <tr>
+        <td>
+        <label for="equation">Enter equation</label>
+        </td>
+        <td>
+        <input type="text" name="equation" id="equation" value={{xD}}>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <label for="start_value">Enter start value</label>
+        </td>
+        <td>
+        <input type="text" name="start_value" id="start_value" value={{x_start_value}}>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <label for="end_value">Enter end value</label>
+        </td>
+        <td>
+        <input type="text" name="end_value" id="end_value" value={{x_end_value}}>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <label for="step">Step</label>
+        </td>
+        <td>
+        <input type="text" name="step" id="step" value={{x_step}}>
+        </td>
+            </tr>
+        </table>
+        <input class="submit" type="submit" value="send equation">
+        <p class="error">{{exception}}</p class="error">
+       
+        
+    </form>
+    <img class="image" src="static/{{filename}}" alt=""/>
+
+</body>
+
+</html>

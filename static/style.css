@@ -1,0 +1,46 @@
+.error {
+  position: fixed;
+  top: 40%;
+  left: 43%;
+  font: Calibri;
+  font-weight: bold;
+  color: red;
+}
+
+.title {
+  text-align: center;
+  font: Calibri;
+  font-weight: bold;
+  color: darkblue;
+}
+
+table {
+  position: fixed;
+  top: 20%;
+  left: 20%;
+  margin-top: -50px;
+  margin-left: -100px;
+  font-weight: bold;
+  color: darkblue;
+}
+
+.image {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
+}
+
+.submit {
+  position: fixed;
+  top: 40%;
+  left: 20%;
+  margin-top: -50px;
+  margin-left: -100px;
+}
+
+body {
+  background: linear-gradient(to right, rgb(145, 206, 241) 40%, white 40%);
+
+}
